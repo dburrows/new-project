@@ -5,6 +5,7 @@ var exec = require('child_process').exec;
 var babelrc = '';
 var gitignore = '';
 var eslintrc = '';
+var webpackConfig = '';
 
 // logger
 function logger(error, stdout, stderr) {
