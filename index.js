@@ -21,6 +21,7 @@ exec("mkdir src", logger);
 exec("mkdir test", logger);
 
 fs.writeFile(".babelrc", babelrc, logger);
-fs.writeFile(".gitignore", babelrc, logger);
-fs.writeFile(".eslintrc", babelrc, logger);
+fs.writeFile(".gitignore", gitignore, logger);
+fs.writeFile(".eslintrc", eslintrc, logger);
+fs.writeFile("webpack.config.js", webpackConfig, logger );
 
