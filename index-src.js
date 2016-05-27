@@ -2,20 +2,20 @@ var fs = require('fs');
 var exec = require('child_process').exec;
 
 // files
-var babelrc = '
+var babelrc = `
 {
   "presets": ["es2015", "react"]
 }
-';
+`;
 
-var gitignore = '
+var gitignore = `
 node_modules
 npm-debug.log
 .DS_Store
 dist
-';
+`;
 
-var eslintrc = '
+var eslintrc = `
 {
   "ecmaFeatures": {
     "jsx": true,
@@ -39,9 +39,9 @@ var eslintrc = '
     "react"
   ]
 }
-';
+`;
 
-var webpackConfig = "
+var webpackConfig = `
 var path = require('path');
 var webpack = require('webpack');
 
@@ -64,7 +64,7 @@ module.exports = {
     }]
   }
 };
-";
+`;
 
 // logger
 function logger(error, stdout, stderr) {
